@@ -1,9 +1,9 @@
 {
-  "name": "copacabana-colors",
+  "name": "copacabanasuite",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://andrea-asaro.github.io/Copacabana_Suite",
+  "homepage": "https://andrea-asaro.github.io/Copacabana_Suite/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
