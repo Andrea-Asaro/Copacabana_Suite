@@ -1,0 +1,31 @@
+
+.col-12 h2{
+    font-size: 36px;
+}
+
+.gridImg{
+    width: 100%;
+    height: 43vh;
+    max-height:43vh;
+}
+
+.gridbtn{
+    font-family: var(--font2);
+    border-color: var(--color-1);
+    border-width: 2px;
+    border-radius: 0px;
+    --bs-btn-active-bg:  var(--color-2);
+    --bs-btn-active-border-color:  var(--color-1);
+    transition: 0.2s;
+    z-index: 1;
+  }
+
+.gridbtn:hover{
+    background-color: var(--color-1);
+    border-color: var(--color-1);
+    color: var(--color-0);
+}
+
+.gridbtn:active{
+    color: var(--color-1) !important;
+}

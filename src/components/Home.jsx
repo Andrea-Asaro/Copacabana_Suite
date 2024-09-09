@@ -1,7 +1,7 @@
 import Hero from './Hero';
-import Colors from './Colors';
 import ChiSiamo from './ChiSiamo';
 import ContactsMap from './ContactsMap';
+import Featuresgrid from './Featuresgrid';
 
 export default function Home(){
 
@@ -9,7 +9,7 @@ export default function Home(){
         
     <div>
       <Hero/>
-      <Colors/>
+      <Featuresgrid/>
       <ChiSiamo/>
       <ContactsMap/>
         
