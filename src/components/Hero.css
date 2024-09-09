@@ -2,9 +2,7 @@
 
 /* roba di swiper  */
 
-#app {
-    height: 100%;
-  }
+
   html,
   body {
     position: relative;
@@ -36,6 +34,7 @@
   
 /* roba mia  */
 
+
 .heroimg2{
   object-position: top;
 }
@@ -53,7 +52,7 @@
 .wholeHero {
   position: relative;
   width: 100%;
-  height: 80vh; /* Altezza della sezione hero */
+  height: 85vh; /* Altezza della sezione hero */
   overflow: hidden; /* Nasconde il contenuto che esce fuori dalla sezione */
 }
 
@@ -68,7 +67,7 @@
 
 .heroContent {
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%); /* Centra il contenuto */
   text-align: center;
@@ -86,8 +85,12 @@
 }
 
 .herobtn:active{
-  --bs-btn-active-bg:  var(--color-1);
+  --bs-btn-active-bg:  var(--color-2);
   --bs-btn-active-border-color:  var(--color-0);
+}
+
+.herobtn:active a{
+  color: var(--color-1);
 }
 
 .herobtn:hover{
@@ -99,4 +102,31 @@
 
 .titletext{
   font-size: 50px;
+}
+
+.slideTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-0);
+  font-size: 4rem;
+  text-align: center;
+  width: 80%;
+  z-index: 2;
+}
+
+@media (max-width: 991px) {
+  
+  .slideTitle{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-0);
+    font-size: 4rem;
+    text-align: center;
+    width: 80%;
+    z-index: 2;
+  }
 }

@@ -1,6 +1,8 @@
 
 import { NavLink } from 'react-router-dom';
 
+// import React, { useRef, useState } from 'react';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -31,7 +33,7 @@ export default function Hero(){
             spaceBetween={30}
             centeredSlides={true}
             autoplay={{
-                delay: 3000,
+                delay: 3700,
                 disableOnInteraction: false,
             }}
             loop={true}
@@ -41,28 +43,26 @@ export default function Hero(){
             <SwiperSlide>
                 <div className="imgShade"></div>
                 <img src={hero1} alt="" />
+                <h2 className="slideTitle font1 fw-bold">Beach wedding & cerimonie</h2>
             </SwiperSlide>
 
             <SwiperSlide>
                 <div className="imgShade"></div>
                 <img src={hero2} alt="" className='heroimg2' />
+                <h2 className="slideTitle font1 fw-bold">Beach Club</h2>
             </SwiperSlide>
 
             <SwiperSlide>
                 <div className="imgShade"></div>
                 <img src={hero3} alt="" />
-            </SwiperSlide>
-
-            <SwiperSlide>
-                <div className="imgShade"></div>
-                <img src={hero4} alt="" />
+                <h2 className="slideTitle font1 fw-bold">Una bella vita è una collezione di bei momenti</h2>
             </SwiperSlide>
             
             </Swiper>
             <div className='heroContent'>
-                <h3 className='text0 font1'>Welcome to</h3>
-                <h1 className='fw-bold font1 text0 titletext '>COPACABANA COLORS</h1>
-                <button className='btn herobtn text0 mt-2 font2'> <NavLink to="/GalleryPage">Gallery</NavLink></button>
+                {/* <h3 className='text0 font1'>Welcome to</h3>
+                <h1 className='fw-bold font1 text0 titletext '>COPACABANA COLORS</h1> */}
+                <button className='btn btn-lg herobtn text0 mt-2 font2'> <NavLink to="/GalleryPage">Gallery</NavLink></button>
             </div>
         </div>
       </>
