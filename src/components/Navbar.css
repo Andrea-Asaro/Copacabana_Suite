@@ -1,14 +1,14 @@
 
 
 /* Animazione per l'apertura e la chiusura */
- .navbar-collapse {
+.navbar-collapse {
   max-height: 0; 
   overflow: hidden;
   transition: max-height 0.3s ease-out !important; 
 }
 
 .navbar-collapse.show {
-  max-height: 200px; 
+  max-height: 500px; 
 } 
 /* Animazione per l'apertura e la chiusura */
 
@@ -17,8 +17,24 @@
 .navbar-nav {
   display: flex;
   align-items: center; /* Centra verticalmente gli elementi */
+  justify-content: space-between;
+  width: 100%;
+  min-height: 110px;
 }
 
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1050;
+  display: flex;
+  /* justify-content: center; */
+  flex-grow: 1;
+}
+
+.navLogo{
+  width: 165px;
+}
 
 .nav-link {
     padding: 5px 15px; /* Aggiungi padding per compensare l'aumento di larghezza */
@@ -26,11 +42,11 @@
   }
 
 .nav-link:hover{
-    color: var(--color-2);
+    color: var(--color-1);
 }
 
 .active{
-    color: var(--color-2) !important;
+    color: var(--color-1) !important;
     /* font-weight: bold; */
 }
 
@@ -45,7 +61,7 @@
     outline: none;
     box-shadow: none;
     border-width: 0px;
-    color: var(--color-2) !important  ; /* Colore di default */
+    color: var(--color-1) !important  ; /* Colore di default */
 }
 
 .navbar-toggler:focus{
@@ -98,11 +114,27 @@
       flex-direction: column; /* Dispone i link in colonna */
       align-items: flex-start; /* Allinea i link a sinistra */
   }
+  
+  .navbar-brand {
+    position: static;
+    transform: none;
+  }
+
+  .nav-section {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 /* Assicura che la navbar-collapse sia sempre visibile su desktop */
 @media (min-width: 992px) {
   .navbar-collapse {
       max-height: none; /* Rimuovi la limitazione dell'altezza per i desktop */
+      overflow: visible;
+  }
+  
+  .nav-section {
+    display: flex;
+    flex-direction: row; /* Assicura che i link siano orizzontali su desktop */
   }
 }
