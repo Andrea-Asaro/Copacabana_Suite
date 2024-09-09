@@ -1,0 +1,230 @@
+.card-img, .card-img-top{
+    border-radius: 0px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card button {
+    position: absolute;
+    bottom: 60%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    opacity: 0;
+  }
+  
+  .cardbtn{
+    border-color: var(--color-0);
+    border-width: 2px;
+    border-radius: 0px;
+    --bs-btn-active-bg:  var(--color-1);
+    --bs-btn-active-border-color:  var(--color-0);
+    transition: 0.2s;
+    z-index: 1;
+  }
+
+  .cardbtn:hover{
+    background-color: var(--color-0);
+    border-color: var(--color-0);
+    color: var(--color-1);
+}
+
+.cardbtn:active{
+  color: var(--color-0) !important;
+}
+
+.card:hover button {
+    display: block;
+    opacity: 1;
+}
+
+.card img {
+    transition: 0.4s;
+}
+
+.card:hover  > div > img {
+    transform: scale(1.1);
+    filter: brightness(0.7); 
+}
+
+/* swiper delle card da desktop  */
+
+.swiper-button-prev, .swiper-button-next{
+  color: var(--color-1);
+}
+
+
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: var(--color-1);
+  opacity: 1;
+}
+
+
+/*    modale    */
+
+.btn-close{
+  --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(212, 163, 115, 0.596) !important;
+  --bs-btn-close-hover-opacity:0.68;
+  border-radius: .1rem;
+}
+
+.modalbtn{
+  background-color: var(--color-1);
+  border-radius: 0;
+  height: 3rem;
+  color: var(--color-0);
+  /* border-color: var(--color-2); */
+  --bs-btn-active-bg:  var(--color-1);
+  --bs-btn-active-color:  var(--color-0);
+  transition: 0.1s;
+}
+
+.modalbtn:hover{
+  background-color: var(--color-0);
+  outline: solid var(--color-1);
+  color: var(--color-1);
+}
+
+button a{
+  color: var(--color-0);
+}
+
+button:hover a{
+  color: var(--color-1);
+}
+
+button:active a{
+  color: var(--color-0);
+}
+
+.closebtn{
+  background-color: var(--color-0);
+  border-radius: 0;
+  height: 3rem;
+  color: var(--color-3);
+  border-color: var(--color-3);
+  border-width: 2px;
+  --bs-btn-active-bg:  var(--color-0);
+  --bs-btn-active-color:  var(--color-3);
+  transition: 0.1s;
+}
+
+.closebtn:hover{
+  background-color: var(--color-3);
+  outline: solid var(--color-3);
+  color: var(--color-0);
+}
+
+#detailsBulletList li{
+  list-style: circle;
+}
+
+
+/*   swiper nella modale    */
+
+.mySwiper{
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 65%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 40%;
+}
+
+/* mine for swiper modale  */
+
+.swiperCol{
+  height: 65vh;
+}
+
+
+
+@media (max-width: 992px) {
+
+  /*   swiper nella modale    */
+
+  .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: 25px;
+  }
+
+  .swiper-pagination-bullet-active{
+    background-color: var(--color-1);
+  }
+
+  .swiperCol div div .swiper-slide {
+    width: 100%;
+    height: 80%;
+    margin-top: 1.2rem;
+  }
+  
+  .swiperCol div div .swiper-slide:nth-child(2n) {
+    width: 100%;
+    height: 80%;
+    margin-top: 1.2rem;
+  }
+  
+  .swiperCol div div .swiper-slide:nth-child(3n) {
+    width: 100%;
+    height: 80%;
+    margin-top: 1.2rem;
+  }
+
+  /*   details button    */
+
+  .card button {
+    position: static; /* Rimuovi la posizione assoluta */
+    transform: none; /* Rimuovi la trasformazione */
+    opacity: 1; /* Mantieni visibile il pulsante */
+    margin-top: auto; /* Aggiungi margine superiore per spingere il pulsante in basso */
+    background-color: var(--color-1);
+    border-radius: 0;
+    width: 35%;
+    color: var(--color-0);
+    border-color: var(--color-1);
+    --bs-btn-active-bg:  var(--color-0);
+    --bs-btn-active-border-color:  var(--color-1);
+    --bs-btn-active-color:  var(--color-1);
+    transition: 0.1s;
+  }
+
+  .card {
+    display: flex; /* Aggiungi flexbox per assicurare che il contenuto della card si disponga correttamente */
+    flex-direction: column; /* Assicura che il contenuto e il pulsante siano disposti in colonna */
+    height: 100%; /* Mantieni l'altezza della card */
+  }
+  
+  .card .card-body {
+    flex: 1; /* Lascia che il corpo della card occupi tutto lo spazio disponibile */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card .card-body button {
+    margin-top: auto; /* Spingi il pulsante in fondo al contenuto della card */
+  }
+
+  .card img {
+    transition: none; /* Disabilita la transizione */
+    transform: none !important; /* Rimuovi qualsiasi trasformazione */
+    filter: none !important; /* Rimuovi qualsiasi filtro */
+  }
+
+
+
+}

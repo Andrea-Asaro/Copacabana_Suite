@@ -1,0 +1,32 @@
+
+.parallaxContainer {
+
+    height: 330px;
+   
+    background-image: url('../media/luminaire2.jpeg');
+    /* Fissa l'immagine, ma la lascia scorrere al parallax scrolling */
+    background-attachment: fixed;
+    /* La posizione di sfondo è centrata */
+    background-position: center;
+    /* L'immagine di sfondo copre l'intero contenitore */
+    background-size: cover;
+}
+  
+.parallaxContent {
+    /* Centra il contenuto all'interno del div con effetto parallasse */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.35); /* Aggiunge uno sfondo semi-trasparente per migliorare la leggibilità */
+}
+  
+.imageWidth{
+    width: 100%;
+}
+  
+/* #longimg{
+    height: ;
+} */

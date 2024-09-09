@@ -1,0 +1,78 @@
+:root{
+    --color-1: #D4A373;
+    --color-2: #F5E8C9;
+    --color-3: #333333;
+    --color-0:#F4F1ED; 
+
+    --font1: "Playfair Display", serif;
+    --font2: "DM Sans", sans-serif;
+}
+
+
+
+/* bg and text color classes */
+.bg1{
+    background-color: var(--color-1); 
+}
+.bg2{
+    background-color: var(--color-2); 
+}
+.bg3{
+    background-color: var(--color-3);
+}
+.bg0{
+    background-color: var(--color-0); 
+}
+
+.text1{
+    color: var(--color-1); 
+}
+.text2{
+    color: var(--color-2);
+}
+.text3{
+    color: var(--color-3);
+}
+.text0{
+    color: var(--color-0);
+}
+/*end bg amd text color classes */
+
+
+.font1 {
+    font-family: var(--font1);
+}
+
+.font1-italic {
+    font-family: var(--font1);
+    font-style: italic;
+}
+
+.font2 {
+    font-family: var(--font2)
+}
+
+/* end miei font installati nel progetto  */
+
+
+body {
+    background: var(--color-0);
+    color: var(--color-3); 
+    margin: 0;
+    padding: 0;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      background-color: white; /* Inizio dal bianco */
+    }
+    to {
+      opacity: 1;
+      background-color: var(--color-0); /* Colore di sfondo della pagina */
+    }
+}
+  
+  .fade-in {
+    animation: fadeIn 1.5s ease-in-out; /* Durata e velocità dell'animazione */
+}

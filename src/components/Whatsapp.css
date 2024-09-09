@@ -1,0 +1,36 @@
+
+@keyframes slideInRotate {
+  0% {
+    transform: translateX(100%) rotate(0deg) scale(0.3); /* Inizia fuori dallo schermo a destra e senza rotazione */
+    opacity: 0; /* Inizia invisibile */
+    
+  }
+  50% {
+    opacity: 1; /* Gradualmente diventa visibile */
+  }
+  100% {
+    transform: translateX(0) rotate(720deg) scale(1); /* Termina nella posizione finale con una rotazione completa */
+    opacity: 1;
+  
+  }
+}
+
+
+.whatsappCorner {
+    background-color: var(--color-1);
+    display: inline-block;
+    border-radius: 50%;
+    padding: 2px;
+    position: fixed;
+    top: 80%;
+    right: 5% !important;
+    z-index: 1000 !important;
+    cursor: pointer;
+    opacity: 0;
+    animation: slideInRotate 1s ease-in-out 2s forwards; /* Applica l'animazione con un ritardo di 2 secondi */
+}
+
+.whatsappimg{
+    width: 75px;
+}
+

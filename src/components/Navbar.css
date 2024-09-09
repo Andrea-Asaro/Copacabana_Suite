@@ -1,0 +1,108 @@
+
+
+/* Animazione per l'apertura e la chiusura */
+ .navbar-collapse {
+  max-height: 0; 
+  overflow: hidden;
+  transition: max-height 0.3s ease-out !important; 
+}
+
+.navbar-collapse.show {
+  max-height: 200px; 
+} 
+/* Animazione per l'apertura e la chiusura */
+
+
+
+.navbar-nav {
+  display: flex;
+  align-items: center; /* Centra verticalmente gli elementi */
+}
+
+
+.nav-link {
+    padding: 5px 15px; /* Aggiungi padding per compensare l'aumento di larghezza */
+    transition: 0.2s;
+  }
+
+.nav-link:hover{
+    color: var(--color-2);
+}
+
+.active{
+    color: var(--color-2) !important;
+    /* font-weight: bold; */
+}
+
+.navbar-toggler {
+    outline: none;
+    box-shadow: none;
+    border-width: 0px;
+    color: var(--color-3) !important  ; /* Colore di default */
+  }
+  
+.navbar-togglerOpen{
+    outline: none;
+    box-shadow: none;
+    border-width: 0px;
+    color: var(--color-2) !important  ; /* Colore di default */
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+   
+  }
+
+  .navbtn{
+    border-color: var(--color-1);
+    background-color: var(--color-2);
+    border-width: 2px;
+    border-radius: 0px;
+    --bs-btn-active-bg:  var(--color-2);
+    --bs-btn-active-border-color:  var(--color-0);
+    transition: 0.2s;
+    z-index: 1;
+  }
+
+  .navbtn:hover{
+    background-color: var(--color-1);
+    border-color: var(--color-2);
+    color: var(--color-2);
+}
+
+.navbtn:hover > a{
+  color: var(--color-2);
+}
+
+.navbtn.active > a {
+  color: var(--color-1);
+}
+
+.navbtn:focus, .navbtn:active {
+  background-color: var(--color-2); /* Cambia lo sfondo al colore desiderato */
+  border-color: var(--color-2) !important;
+ 
+}
+
+.navbtn:focus > a, .navbtn:active > a {
+  color: var(--color-1); /* Cambia il colore del testo dell'anchor tag al click */
+}
+
+
+
+
+
+/* Media query per navlinks mobile */
+@media (max-width: 991px) {
+  .navbar-nav {
+      flex-direction: column; /* Dispone i link in colonna */
+      align-items: flex-start; /* Allinea i link a sinistra */
+  }
+}
+
+/* Assicura che la navbar-collapse sia sempre visibile su desktop */
+@media (min-width: 992px) {
+  .navbar-collapse {
+      max-height: none; /* Rimuovi la limitazione dell'altezza per i desktop */
+  }
+}

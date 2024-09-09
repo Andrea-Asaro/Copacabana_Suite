@@ -1,0 +1,102 @@
+
+
+/* roba di swiper  */
+
+#app {
+    height: 100%;
+  }
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 80vh;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+/* roba mia  */
+
+.heroimg2{
+  object-position: top;
+}
+
+.imgShade{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Overlay nero semi-trasparente */
+  z-index: 1; /* Posiziona l'overlay sopra l'immagine */
+}
+
+.wholeHero {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Altezza della sezione hero */
+  overflow: hidden; /* Nasconde il contenuto che esce fuori dalla sezione */
+}
+
+.wholeHero .mySwiper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Posiziona lo swiper dietro al contenuto */
+}
+
+.heroContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra il contenuto */
+  text-align: center;
+  color: var( --color-3); /* Cambia il colore del testo se necessario */
+}
+
+.herobtn{
+  border-color: var(--color-0);
+  border-width: 2px;
+  border-radius: 0px;
+}
+
+.herobtn a{
+  color: var(--color-0);
+}
+
+.herobtn:active{
+  --bs-btn-active-bg:  var(--color-1);
+  --bs-btn-active-border-color:  var(--color-0);
+}
+
+.herobtn:hover{
+  background-color: var(--color-0);
+  border-color: var(--color-0);
+  color: var(--color-1);
+
+}
+
+.titletext{
+  font-size: 50px;
+}
