@@ -82,6 +82,7 @@
 
 .herobtn a{
   color: var(--color-0);
+  text-decoration: none;
 }
 
 .herobtn:active{
