@@ -3,6 +3,10 @@
     font-size: 36px;
 }
 
+.gradientColor{
+    background-image: linear-gradient(var(--color-2), var(--color-2));
+}
+
 .gridImg{
     width: 100%;
     height: 45vh;
@@ -19,7 +23,7 @@
     --bs-btn-active-border-color:  var(--color-1);
     transition: 0.2s;
     z-index: 1;
-  }
+}
 
 .gridbtn:hover{
     background-color: var(--color-1);
@@ -30,3 +34,9 @@
 .gridbtn:active{
     color: var(--color-1) !important;
 }
+
+/* @media (max-width: 992px){
+    .gradientColor{
+        background-image: linear-gradient(var(--color-0), var(--color-0));
+    }
+} */

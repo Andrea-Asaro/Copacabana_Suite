@@ -1,19 +1,19 @@
-import '../components/Featuresgrid.css';
+import './Featuresgrid.css';
 
 
 export default function Featuresgrid(){
     return (
         <>
         <div className="container-fluid">
-            <div className="row">
+            <div className="row bg2">
                 <div className="col-12">
-                    <div className="row mt-5 mb-4 pt-3 pt-lg-5 justify-content-center">
+                    <div className="row mt-5 pb-4 pt-3 pt-lg-5 justify-content-center gradientColor">
                         <div className='col-12 col-lg-6 mb-4 text-center px-4 px-lg-0'>
                             <h2 className='font1 fw-bold text1 mb-4'>Il nostro lido</h2>
                             <p className='font2 fs-5'>Il Copacabana Suite rappresenta la fusione di sfere sensoriali che guidano gli sposi in un suggestivo gioco di emozioni che si snodano tra le stelle e il mare.</p>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row bg2">
                         <div className="col-12 col-lg-6 p-0 text-center">
                             <img src="https://picsum.photos/700/300" className='gridImg' alt="" />
                         </div>
@@ -27,7 +27,7 @@ export default function Featuresgrid(){
                     </div>
                 </div>
                 <div className="col-12">
-                    <div className="row">
+                    <div className="row bg2">
                         <div className="col-12 col-lg-6 p-0 order-lg-3">
                             <img src="https://picsum.photos/700/301" className='gridImg' alt="" />
                         </div>
@@ -41,7 +41,7 @@ export default function Featuresgrid(){
                     </div>
                 </div>
                 <div className="col-12">
-                    <div className="row">
+                    <div className="row bg2">
                         <div className="col-12 col-lg-6 p-0">
                             <img src="https://picsum.photos/700/302" className='gridImg' alt="" />
                         </div>

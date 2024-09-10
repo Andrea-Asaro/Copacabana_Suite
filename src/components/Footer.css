@@ -1,3 +1,9 @@
+
+.footerLogo{
+  width: 200px;
+
+}
+
 li{
     list-style: none;
 }
@@ -7,5 +13,5 @@ footer div ul li a {
 }
 
 footer div ul li a:hover {
-    color: var(--color-2) !important ;
+    color: var(--color-1) !important ;
 }

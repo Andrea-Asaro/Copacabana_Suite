@@ -1,8 +1,8 @@
 
 import "./NostriEventi.css"
 
-import exibit from "../media/eventImageExibition.jpg"
-import apericena from "../media/eventImgApericena.jpg"
+import exibit from "../../media/eventImageExibition.jpg"
+import apericena from "../../media/eventImgApericena.jpg"
 
 export default function NostriEventi(){
     return (

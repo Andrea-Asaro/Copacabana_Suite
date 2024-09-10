@@ -33,7 +33,7 @@
 }
 
 .navLogo{
-  width: 165px;
+  width: 175px;
 }
 
 .nav-link {
@@ -69,21 +69,21 @@
    
   }
 
-  .navbtn{
-    border-color: var(--color-1);
-    background-color: var(--color-2);
-    border-width: 2px;
-    border-radius: 0px;
-    --bs-btn-active-bg:  var(--color-2);
-    --bs-btn-active-border-color:  var(--color-0);
-    transition: 0.2s;
-    z-index: 1;
-  }
+.navbtn{
+  border-color: var(--color-1);
+  background-color: var(--color-2);
+  border-width: 2px;
+  border-radius: 0px;
+  --bs-btn-active-bg:  var(--color-2);
+  --bs-btn-active-border-color:  var(--color-0);
+  transition: 0.2s;
+  z-index: 1;
+}
 
-  .navbtn:hover{
-    background-color: var(--color-1);
-    border-color: var(--color-2);
-    color: var(--color-2);
+.navbtn:hover{
+  background-color: var(--color-1);
+  border-color: var(--color-2);
+  color: var(--color-2);
 }
 
 .navbtn:hover > a{

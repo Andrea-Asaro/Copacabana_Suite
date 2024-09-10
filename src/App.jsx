@@ -14,9 +14,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // componenti
 import Navbar from "./components/Navbar";
-import Topbar from "./components/Topbar";
 import Whatsapp from './components/Whatsapp';
-import Home from './components/Home';
+import Home from './components/HomePage/Home';
 import GalleryPage from './components/GalleryPage';
 import ChisiamoPage from './components/ChisiamoPage';
 import Footer from './components/Footer';
@@ -29,7 +28,6 @@ function App() {
   return (
     <Router basename={basename}>
       <div className="fade-in"> 
-        {/* <Topbar/> */}
         <Navbar/>
         
         <Routes>

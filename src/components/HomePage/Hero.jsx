@@ -11,16 +11,15 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import '../components/Hero.css';
+import './Hero.css';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 //media
-import hero1 from '../media/hero1.jpg';
-import hero2 from '../media/hero2.jpg';
-import hero3 from '../media/hero3.jpg';
-import hero4 from '../media/hero4.jpg';
+import hero1 from '../../media/hero1.jpg';
+import hero2 from '../../media/hero2.jpg';
+import hero3 from '../../media/hero3.jpg';
 
 
 export default function Hero(){
