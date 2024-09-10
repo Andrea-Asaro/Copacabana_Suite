@@ -25,7 +25,7 @@ export default function ChiSiamo() {
                         Chi siamo
                     </animated.h2>
                     <animated.p style={fadeUpStyle} className="text3 z-2 mt-4 mb-5 text-center fs-4 lorem font2">
-                        Scopri il fascino del Copacabana Colors, il B&B che porta la Puglia nella tua vacanza. A due passi dal mare, ti accoglie con camere luminose e curate nei dettagli, dove ogni comfort è pensato per farti sentire come a casa, con un tocco di stile e autenticità.
+                    Il Copacabana Suite è il luogo ideale per festeggiare con eleganza e raffinatezza ogni tipo di ricorrenza: dalle diverse proposte banqueting fino agli allestimenti, ciascun evento è cucito a misura del cliente. Eclettismo e una spiccata propensione per il design moderno e di tendenza contraddistinguono la location.
                     </animated.p>
                 </div>
             </div>

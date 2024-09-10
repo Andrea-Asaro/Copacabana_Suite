@@ -85,22 +85,21 @@
 }
 
 .herobtn:active{
-  --bs-btn-active-bg:  var(--color-2);
+  /* --bs-btn-active-bg:  var(--color-0); */
   --bs-btn-active-border-color:  var(--color-0);
 }
 
 .herobtn:active a{
-  color: var(--color-1);
+  color: var(--color-0) !important;
 }
 
 .herobtn:hover{
   background-color: var(--color-0);
   border-color: var(--color-0);
-  color: var(--color-1) !important;
 }
 
 .herobtn:hover a{
-  color: var(--color-1);
+  color: var(--color-3);
 }
 
 

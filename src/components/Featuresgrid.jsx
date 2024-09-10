@@ -8,7 +8,7 @@ export default function Featuresgrid(){
             <div className="row">
                 <div className="col-12">
                     <div className="row mt-5 mb-4 pt-3 pt-lg-5 justify-content-center">
-                        <div className='col-12 col-lg-6 mb-2 text-center px-4 px-lg-0'>
+                        <div className='col-12 col-lg-6 mb-4 text-center px-4 px-lg-0'>
                             <h2 className='font1 fw-bold text1 mb-4'>Il nostro lido</h2>
                             <p className='font2 fs-5'>Il Copacabana Suite rappresenta la fusione di sfere sensoriali che guidano gli sposi in un suggestivo gioco di emozioni che si snodano tra le stelle e il mare.</p>
                         </div>
