@@ -24,7 +24,7 @@ export default function Footer(){
                             <NavLink to="/" className="nav-link p-0 text3 fs-6 ">Home</NavLink>
                         </li>
                         <li className="nav-item mb-3">
-                            <NavLink to="/galleryPage" className="nav-link p-0 text3 fs-6 ">Ristorante</NavLink>
+                            <NavLink to="/ristorantePage" className="nav-link p-0 text3 fs-6 ">Ristorante</NavLink>
                         </li>
                         <li className="nav-item mb-3">
                             <NavLink to="/chisiamoPage" className="nav-link p-0 text3 fs-6 ">Party</NavLink>

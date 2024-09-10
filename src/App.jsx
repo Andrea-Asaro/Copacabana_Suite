@@ -16,6 +16,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import Whatsapp from './components/Whatsapp';
 import Home from './components/HomePage/Home';
+import RistorantePage from './components/RistorantePage/RistorantePage';
 import GalleryPage from './components/GalleryPage';
 import ChisiamoPage from './components/ChisiamoPage';
 import Footer from './components/Footer';
@@ -32,6 +33,8 @@ function App() {
         
         <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/ristorantePage" element={<RistorantePage />} />
+
             <Route path="/galleryPage" element={<GalleryPage />} />
             <Route path="/chisiamoPage" element={<ChisiamoPage />} />
         </Routes>

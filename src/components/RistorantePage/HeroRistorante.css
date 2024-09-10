@@ -1,0 +1,140 @@
+
+
+/* roba di swiper  */
+
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+#HeroRistorante .swiper {
+  width: 100%;
+  height: 55vh;
+}
+  
+#HeroRistorante .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#HeroRistorante .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  
+/* roba mia  */
+
+
+#HeroRistorante Swiper SwiperSlide .heroimg2{
+  object-position: top;
+}
+
+#HeroRistorante Swiper SwiperSlide .imgShade{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Overlay nero semi-trasparente */
+  z-index: 1; /* Posiziona l'overlay sopra l'immagine */
+}
+
+#HeroRistorante {
+  position: relative;
+  width: 100%;
+  height: 55vh; /* Altezza della sezione hero */
+  overflow: hidden; /* Nasconde il contenuto che esce fuori dalla sezione */
+}
+
+#HeroRistorante .mySwiper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Posiziona lo swiper dietro al contenuto */
+}
+
+#HeroRistorante .heroContent {
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra il contenuto */
+  text-align: center;
+  color: var( --color-3); /* Cambia il colore del testo se necessario */
+}
+
+#HeroRistorante .heroContent .herobtn{
+  border-color: var(--color-0);
+  border-width: 2px;
+  border-radius: 0px;
+}
+
+#HeroRistorante .heroContent .herobtn a{
+  color: var(--color-0);
+  text-decoration: none;
+}
+
+#HeroRistorante .heroContent .herobtn:active{
+  /* --bs-btn-active-bg:  var(--color-0); */
+  --bs-btn-active-border-color:  var(--color-0);
+}
+
+#HeroRistorante .heroContent .herobtn:active a{
+  color: var(--color-0) !important;
+}
+
+#HeroRistorante .heroContent .herobtn:hover{
+  background-color: var(--color-0);
+  border-color: var(--color-0);
+}
+
+#HeroRistorante .heroContent .herobtn:hover a{
+  color: var(--color-3);
+}
+
+
+#HeroRistorante .swiper-slide .slideTitle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-0);
+  font-size: 3.2rem;
+  text-align: center;
+  width: 80%;
+  z-index: 2;
+}
+
+@media (max-width: 991px) {
+  
+  #HeroRistorante Swiper SwiperSlide .slideTitle{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-0);
+    font-size: 3.2rem;
+    text-align: center;
+    width: 80%;
+    z-index: 2;
+  }
+  #HeroRistorante .heroContent {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra il contenuto */
+    text-align: center;
+    color: var( --color-3); /* Cambia il colore del testo se necessario */
+  }
+}
