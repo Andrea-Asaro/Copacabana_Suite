@@ -14,7 +14,7 @@ export default function Featuresgrid(){
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-12 col-lg-6 bg-danger p-0 text-center">
+                        <div className="col-12 col-lg-6 p-0 text-center">
                             <img src="https://picsum.photos/700/300" className='gridImg' alt="" />
                         </div>
                         <div className="col-12 col-lg-6 p-5 order-1">
@@ -28,7 +28,7 @@ export default function Featuresgrid(){
                 </div>
                 <div className="col-12">
                     <div className="row">
-                        <div className="col-12 col-lg-6 bg-danger p-0 order-lg-3">
+                        <div className="col-12 col-lg-6 p-0 order-lg-3">
                             <img src="https://picsum.photos/700/301" className='gridImg' alt="" />
                         </div>
                         <div className="col-12 col-lg-6 p-5 order-lg-2 text-end">
@@ -42,7 +42,7 @@ export default function Featuresgrid(){
                 </div>
                 <div className="col-12">
                     <div className="row">
-                        <div className="col-12 col-lg-6 bg-danger p-0">
+                        <div className="col-12 col-lg-6 p-0">
                             <img src="https://picsum.photos/700/302" className='gridImg' alt="" />
                         </div>
                         <div className="col-12 col-lg-6 p-5">

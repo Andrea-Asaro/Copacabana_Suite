@@ -1,8 +1,8 @@
 import Hero from './Hero';
 import ChiSiamo from './ChiSiamo';
-import ContactsMap from './ContactsMap';
 import Featuresgrid from './Featuresgrid';
 import ContattaciBand from "./ContattaciBand";
+import NostriEventi from "./NostriEventi";
 
 
 export default function Home(){
@@ -14,6 +14,7 @@ export default function Home(){
       <Featuresgrid/>
       <ChiSiamo/>
       <ContattaciBand/>
+      <NostriEventi/>
         
     </div>
     )

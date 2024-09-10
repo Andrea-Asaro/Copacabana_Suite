@@ -5,6 +5,8 @@
     min-height: 50vh;
     background-position: center;
     background-attachment: fixed;
+    background-size: cover;
+
 }
 
 .contattaciShade{
