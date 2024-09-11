@@ -2,10 +2,10 @@ import React from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import { useInView } from 'react-intersection-observer';
 
-import image1 from "../media/ChisiamoPageImage1.jpg";
-import image2 from "../media/riccioBagno.jpeg";
-import image3 from "../media/luminaireBagno.jpg";
-import image4 from "../media/ChisiamoPageImage4.jpeg";
+import image1 from "../media/partyHero.webp";
+import image2 from "../media/weddingHero.jpg";
+import image3 from "../media/ristoranteHero.jpg";
+import image4 from "../media/lidoPiscinaGiorno.jpg";
 import hero1 from '../media/hero1.jpg';
 
 
@@ -60,7 +60,7 @@ export default function GalleryPage() {
             <div className="container">
                 <div className="row pb-5">
                     <div className="col-12 py-3">
-                        <h2 className="text-center my-5 py-2 fw-bold text1 font1">LA NOSTRA GALLERY</h2>
+                        <h2 className="text-center my-lg-5 mt-4 mb-5 py-2 fw-bold text1 font1">La nostra gallery</h2>
                     </div>
 
                     <div className="col-lg-4 mb-4 mb-lg-0">
@@ -91,7 +91,7 @@ export default function GalleryPage() {
                         />
 
                         <animated.img
-                            src={hero1}
+                            src={image3}
                             className="w-100 rounded-0 mb-4"
                             alt="Boat on Calm Water"
                             style={fadeUp5}
@@ -109,7 +109,7 @@ export default function GalleryPage() {
                         />
 
                         <animated.img
-                            src={image3}
+                            src={hero1}
                             className="w-100 rounded-0 mb-4"
                             alt="Yosemite National Park"
                             style={fadeIn4}

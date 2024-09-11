@@ -17,9 +17,9 @@ import './Hero.css';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 //media
-import hero1 from '../../media/hero1.jpg';
-import hero2 from '../../media/hero2.jpg';
-import hero3 from '../../media/hero3.jpg';
+import hero1 from '../../media/ristoranteHero.jpg';
+import hero2 from '../../media/heroSpiaggia.jpg';
+import hero3 from '../../media/heroPiscina.jpeg';
 
 
 export default function Hero(){

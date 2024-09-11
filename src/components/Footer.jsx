@@ -32,9 +32,9 @@ export default function Footer(){
                         <li className="nav-item mb-3">
                             <NavLink to="/weddingPage" className="nav-link p-0 text3 fs-6 ">Wedding</NavLink>
                         </li>
-                        <li className="nav-item mb-3">
+                        {/* <li className="nav-item mb-3">
                             <NavLink to="/chisiamoPage" className="nav-link p-0 text3 fs-6 ">Servizi</NavLink>
-                        </li>
+                        </li> */}
                         <li className="nav-item mb-3">
                             <NavLink to="/galleryPage" className="nav-link p-0 text3 fs-6 ">Contatti</NavLink>
                         </li>

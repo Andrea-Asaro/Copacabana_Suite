@@ -1,15 +1,3 @@
-.mapResponsive{
-    position: relative;
-    overflow: hidden;
-}
-
-.map-responsive iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
 .contactsIcons{
     height: 70px;
@@ -52,4 +40,27 @@
     border: 3px solid;
     /* color: var(--color-1); */
     color: var(--color-1);
+}
+
+.mapResponsive{
+    position: relative;
+    overflow: hidden;
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg0-onlyDesktop{
+    background-color: var(--color-0);
+}
+
+@media (max-Width:992px){
+    .bg0-onlyDesktop{
+        background-color: var(--color-2);
+    }   
 }

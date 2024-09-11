@@ -25,7 +25,7 @@ import PartyPage from './components/PartyPage/PartyPage';
 import WeddingPage from './components/WeddingPage/WeddingPage';
 import ContattiPage from './components/ContattiPage/ContattiPage';
 import GalleryPage from './components/GalleryPage';
-import ChisiamoPage from './components/ChisiamoPage';
+import ChisiamoPage from './components/ChiSiamoPage/ChisiamoPage';
 
 import Footer from './components/Footer';
 

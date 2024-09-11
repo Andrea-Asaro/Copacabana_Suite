@@ -40,7 +40,7 @@ export default function Navbar() {
                             <NavLink className="nav-item nav-link text3 font2 mx-lg-1" to="/weddingPage" onClick={handleLinkClick}>Wedding</NavLink>
                         </div>
                         <div className="nav-section">
-                            <NavLink className="nav-item nav-link text3 font2 mx-lg-1" to="/serviziPage" onClick={handleLinkClick}>Servizi</NavLink>
+                            {/* <NavLink className="nav-item nav-link text3 font2 mx-lg-1" to="/serviziPage" onClick={handleLinkClick}>Servizi</NavLink> */}
                             <NavLink className="nav-item nav-link text3 font2 mx-lg-1" to="/contattiPage" onClick={handleLinkClick}>Contatti</NavLink>
                             <NavLink className="nav-item nav-link text3 font2 mx-lg-1" to="/chisiamoPage" onClick={handleLinkClick}>Chi siamo</NavLink>
                             <NavLink className="nav-item nav-link text3 font2 mx-lg-1" to="/galleryPage" onClick={handleLinkClick}>Gallery</NavLink>

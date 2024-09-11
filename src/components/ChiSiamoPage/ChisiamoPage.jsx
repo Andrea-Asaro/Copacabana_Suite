@@ -1,11 +1,16 @@
 import React from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import { useInView } from 'react-intersection-observer';
+
 import "./ChisiamoPage.css";
-import image1 from "../media/ChisiamoPageImage1.jpg";
-import image2 from "../media/riccioBagno.jpeg";
-import image3 from "../media/luminaireBagno.jpg";
-import image4 from "../media/ChisiamoPageImage4.jpeg";
+
+import image1 from "../../media/lidoPiscinaGiorno.jpg";
+import image2 from "../../media/contattiHero.jpeg";
+import image3 from "../../media/lidoPiscinaGiorno.jpg";
+import image4 from "../../media/weddingHero.jpg";
+
+import HeroChiSiamo from "./HeroChiSiamo";
+
 
 export default function ChisiamoPage() {
 
@@ -49,15 +54,15 @@ export default function ChisiamoPage() {
 
     return (
         <>
-            {/* fascia sfondo parallasse  */}
-            <div className="parallaxContainer mb-5">
-                <div className="parallaxContent">
-                    <h2 className="h1 font1 fw-bold">COPACABANA COLORS</h2>
+            <HeroChiSiamo/>
+
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-12 col-lg-6 text-center px-5 px-lg-0 mb-4">
+                        <h1 className="ristoranteTitle font1 text1 fw-bold text-center mt-5 pt-3 pt-lg-5 mb-4">Per le tue occasioni più speciali</h1>
+                    </div>
                 </div>
             </div>
-            {/* fascia sfondo parallasse  */}
-
-            <h2 className="text-center my-5 py-3 fw-bold text1 font1">CHI SIAMO?</h2>
 
             <div className="container">
                 <div className="row">
@@ -67,9 +72,9 @@ export default function ChisiamoPage() {
                         ref={textRef}
                         style={textSlideIn}
                     >
-                        <p>Il Copacabana Colors è un pratico e moderno B&B sul mare in Puglia, situato a pochi passi dal lungomare. Con 5 camere facilmente accessibili al piano terra, è perfetto per chi ha esigenze particolari o preferisce evitare le scale. La zona comune offre un angolo cottura completo, ideale per preparare pranzi o cene veloci, o per le esigenze dei più piccoli.</p>
+                        <p>Il Lido Copacabana Suite a Margherita di Savoia è la scelta ideale per chi desidera organizzare ricevimenti, matrimoni e feste in una location esclusiva sul mare. Il lido offre un'esperienza unica e indimenticabile.</p>
                         <p>
-                        Ogni camera è dotata di un'ampia portafinestra che illumina naturalmente l'ambiente, creando un'atmosfera rilassante. Le stanze, ispirate ai tipici temi pugliesi, offrono tutti i comfort: letto matrimoniale (con possibilità in alcune di esse di aggiungere un letto singolo o una culla), scrivania, frigobar, TV, asciugacapelli, macchina del caffè espresso e bagno privato con doccia. Prenota ora il tuo soggiorno al Copacabana Colors!
+                        Il ristorante del Lido Copacabana propone piatti raffinati e deliziosi, perfetti per ogni occasione speciale. La struttura è attrezzata per accogliere eventi di ogni tipo, garantendo un servizio impeccabile e un'atmosfera suggestiva. Prenota ora il tuo evento al Lido Copacabana Suite e vivi momenti indimenticabili in riva al mare!
                         </p>
                     </animated.div>
 
