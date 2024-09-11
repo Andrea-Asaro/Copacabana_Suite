@@ -1,7 +1,7 @@
 
 .parallaxContainer {
 
-    height: 330px;
+    height: 55vh;
    
     background-image: url('../media/luminaire2.jpeg');
     /* Fissa l'immagine, ma la lascia scorrere al parallax scrolling */
@@ -27,6 +27,3 @@
     width: 100%;
 }
   
-/* #longimg{
-    height: ;
-} */

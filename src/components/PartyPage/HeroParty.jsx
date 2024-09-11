@@ -11,7 +11,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import './HeroRistorante.css';
+import './HeroParty.css';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -22,12 +22,12 @@ import hero2 from '../../media/hero2.jpg';
 import hero3 from '../../media/hero3.jpg';
 
 
-export default function HeroRistorante(){
+export default function HeroParty(){
 
     return (
 
         <>
-         <div id='HeroRistorante' className='wholeHero'>
+         <div id='HeroParty' className='wholeHero z-2'>
            {/* <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -64,7 +64,7 @@ export default function HeroRistorante(){
 
             <div className="parallax-bg">
                 <div className="hero-content">
-                    <h1 className="hero-title font1 fw-bold">Ristorante</h1>
+                    <h1 className="hero-title font1 fw-bold">Party</h1>
                     <button className='btn btn-lg herobtn text0 mt-2 font2'>
                         <NavLink to="/GalleryPage">Gallery</NavLink>
                     </button>
