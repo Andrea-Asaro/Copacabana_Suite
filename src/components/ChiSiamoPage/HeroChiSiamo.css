@@ -97,10 +97,12 @@ body {
 #HeroChiSiamo .heroContent .herobtn:hover{
   background-color: var(--color-0);
   border-color: var(--color-0);
+  color: var(--color-3) !important;
+
 }
 
 #HeroChiSiamo .heroContent .herobtn:hover a{
-  color: var(--color-3);
+  color: var(--color-3) !important;
 }
 
 

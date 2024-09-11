@@ -27,7 +27,7 @@ export default function HeroRistorante(){
     return (
 
         <>
-         <div id='HeroRistorante' className='wholeHero'>
+         <div id='HeroRistorante' className='wholeHero z-2'>
            {/* <Swiper
             spaceBetween={30}
             centeredSlides={true}

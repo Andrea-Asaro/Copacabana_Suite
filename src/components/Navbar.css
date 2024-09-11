@@ -47,7 +47,7 @@
 
 .active{
     color: var(--color-1) !important;
-    /* font-weight: bold; */
+    font-weight: bold;
 }
 
 .navbar-toggler {

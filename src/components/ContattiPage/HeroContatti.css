@@ -94,9 +94,14 @@ body {
   color: var(--color-0) !important;
 }
 
-#HeroContatti .heroContent .herobtn:hover{
+#HeroContatti .heroContent .herobtn:hover a {
+  color: var(--color-3);
+}
+
+#HeroContatti .parallax-bg .heroContent .herobtn:hover{
   background-color: var(--color-0);
   border-color: var(--color-0);
+
 }
 
 #HeroContatti .heroContent .herobtn:hover a{
