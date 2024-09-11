@@ -9,7 +9,8 @@ export default function CaroselloWedding(){
     return(
         <>
         
-        <div className="container px-5 my-5">
+        <div className="container px-5 mt-5 mb-3">
+            
             <div id='CaroselloWedding'>
             
                 <Swiper
