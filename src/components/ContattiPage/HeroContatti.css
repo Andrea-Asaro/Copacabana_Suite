@@ -1,0 +1,211 @@
+
+
+/* roba di swiper  */
+
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+#HeroContatti .swiper {
+  width: 100%;
+  height: 55vh;
+}
+  
+#HeroContatti .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#HeroContatti .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  
+/* roba mia  */
+
+
+#HeroContatti Swiper SwiperSlide .heroimg2{
+  object-position: top;
+}
+
+#HeroContatti Swiper SwiperSlide .imgShade{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Overlay nero semi-trasparente */
+  z-index: 1; /* Posiziona l'overlay sopra l'immagine */
+}
+
+#HeroContatti {
+  position: relative;
+  width: 100%;
+  height: 55vh; /* Altezza della sezione hero */
+  overflow: hidden; /* Nasconde il contenuto che esce fuori dalla sezione */
+}
+
+#HeroContatti .mySwiper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Posiziona lo swiper dietro al contenuto */
+}
+
+#HeroContatti .heroContent {
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra il contenuto */
+  text-align: center;
+  color: var( --color-3); /* Cambia il colore del testo se necessario */
+}
+
+#HeroContatti .heroContent .herobtn{
+  border-color: var(--color-0);
+  border-width: 2px;
+  border-radius: 0px;
+}
+
+#HeroContatti .heroContent .herobtn a{
+  color: var(--color-0);
+  text-decoration: none;
+}
+
+#HeroContatti .heroContent .herobtn:active{
+  /* --bs-btn-active-bg:  var(--color-0); */
+  --bs-btn-active-border-color:  var(--color-0);
+}
+
+#HeroContatti .heroContent .herobtn:active a{
+  color: var(--color-0) !important;
+}
+
+#HeroContatti .heroContent .herobtn:hover{
+  background-color: var(--color-0);
+  border-color: var(--color-0);
+}
+
+#HeroContatti .heroContent .herobtn:hover a{
+  color: var(--color-3);
+}
+
+
+#HeroContatti .swiper-slide .slideTitle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-0);
+  font-size: 3.2rem;
+  text-align: center;
+  width: 80%;
+  z-index: 2;
+}
+
+
+/* VERSIONE ALTERNATIVA SENZA HERO CON CAROSELLO MA CON SOLO PARALLASSE  */
+
+#HeroContatti {
+  position: relative;
+  width: 100%;
+  height: 55vh;
+  overflow: hidden;
+}
+
+#HeroContatti .parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../media/hero2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+#HeroContatti .parallax-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Overlay scuro */
+  z-index: 0;
+}
+
+#HeroContatti .hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--color-0);
+  z-index: 1;
+}
+
+#HeroContatti .hero-title {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+/* VERSIONE ALTERNATIVA SENZA HERO CON CAROSELLO MA CON SOLO PARALLASSE  */
+
+
+
+@media (max-width: 991px) {
+  
+  #HeroContatti Swiper SwiperSlide .slideTitle{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-0);
+    font-size: 3.2rem;
+    text-align: center;
+    width: 80%;
+    z-index: 2;
+  }
+  #HeroContatti .heroContent {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra il contenuto */
+    text-align: center;
+    color: var( --color-3); /* Cambia il colore del testo se necessario */
+  }
+
+
+  /* VERSIONE ALTERNATIVA SENZA HERO CON CAROSELLO MA CON SOLO PARALLASSE  */
+
+  #HeroContatti .parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../media/hero2.jpg');
+    background-size: cover;
+    background-position: 53% 50%;
+    background-attachment: fixed;
+    z-index: -1;
+  }
+
+
+}

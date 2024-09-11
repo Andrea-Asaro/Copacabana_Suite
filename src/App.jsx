@@ -18,12 +18,15 @@ import ScrollToTop from "./components/ScrollToTop";
 
 import Navbar from "./components/Navbar";
 import Whatsapp from './components/Whatsapp';
+
 import Home from './components/HomePage/Home';
 import RistorantePage from './components/RistorantePage/RistorantePage';
 import PartyPage from './components/PartyPage/PartyPage';
 import WeddingPage from './components/WeddingPage/WeddingPage';
+import ContattiPage from './components/ContattiPage/ContattiPage';
 import GalleryPage from './components/GalleryPage';
 import ChisiamoPage from './components/ChisiamoPage';
+
 import Footer from './components/Footer';
 
 // componenti
@@ -42,6 +45,7 @@ function App() {
             <Route path="/ristorantePage" element={<RistorantePage />} />
             <Route path="/PartyPage" element={<PartyPage />} />
             <Route path="/WeddingPage" element={<WeddingPage />} />
+            <Route path="/ContattiPage" element={<ContattiPage />} />
 
             <Route path="/galleryPage" element={<GalleryPage />} />
             <Route path="/chisiamoPage" element={<ChisiamoPage />} />
