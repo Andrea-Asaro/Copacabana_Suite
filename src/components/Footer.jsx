@@ -27,10 +27,10 @@ export default function Footer(){
                             <NavLink to="/ristorantePage" className="nav-link p-0 text3 fs-6 ">Ristorante</NavLink>
                         </li>
                         <li className="nav-item mb-3">
-                            <NavLink to="/chisiamoPage" className="nav-link p-0 text3 fs-6 ">Party</NavLink>
+                            <NavLink to="/partyPage" className="nav-link p-0 text3 fs-6 ">Party</NavLink>
                         </li>
                         <li className="nav-item mb-3">
-                            <NavLink to="/galleryPage" className="nav-link p-0 text3 fs-6 ">Wedding</NavLink>
+                            <NavLink to="/weddingPage" className="nav-link p-0 text3 fs-6 ">Wedding</NavLink>
                         </li>
                         <li className="nav-item mb-3">
                             <NavLink to="/chisiamoPage" className="nav-link p-0 text3 fs-6 ">Servizi</NavLink>
@@ -39,7 +39,7 @@ export default function Footer(){
                             <NavLink to="/galleryPage" className="nav-link p-0 text3 fs-6 ">Contatti</NavLink>
                         </li>
                         <li className="nav-item mb-3">
-                            <NavLink to="/galleryPage" className="nav-link p-0 text3 fs-6 ">Chi siamo</NavLink>
+                            <NavLink to="/ChiSiamoPage" className="nav-link p-0 text3 fs-6 ">Chi siamo</NavLink>
                         </li>
                         <li className="nav-item mb-3">
                             <NavLink to="/galleryPage" className="nav-link p-0 text3 fs-6 ">Gallery</NavLink>
@@ -69,10 +69,10 @@ export default function Footer(){
                             <a target="blank" href="https://www.copacabanasuite.com/" className="nav-link p-0 text3 fs-6 ">Home</a>
                         </li>
                         <li className="nav-item mb-3">
-                            <a target="blank" href="https://www.copacabanasuite.com/?page_id=173" className="nav-link p-0 text3 fs-6 ">Ristorante</a>
+                            <a target="blank" href="https://www.copacabanasuite.com/?page_id=173" className="nav-link p-0 text3 fs-6 ">Gallery</a>
                         </li>
                         <li className="nav-item mb-3">
-                            <a target="blank" href="https://www.copacabanasuite.com/wedding/" className="nav-link p-0 text3 fs-6 ">Wedding</a>
+                            <a target="blank" href="https://www.copacabanasuite.com/wedding/" className="nav-link p-0 text3 fs-6 ">Chi siamo</a>
                         </li>
                     </ul>
                 </div>

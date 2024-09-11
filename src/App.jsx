@@ -13,11 +13,15 @@ import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // componenti
+import ScrollToTop from "./components/ScrollToTop";
+
+
 import Navbar from "./components/Navbar";
 import Whatsapp from './components/Whatsapp';
 import Home from './components/HomePage/Home';
 import RistorantePage from './components/RistorantePage/RistorantePage';
 import PartyPage from './components/PartyPage/PartyPage';
+import WeddingPage from './components/WeddingPage/WeddingPage';
 import GalleryPage from './components/GalleryPage';
 import ChisiamoPage from './components/ChisiamoPage';
 import Footer from './components/Footer';
@@ -29,6 +33,7 @@ function App() {
 
   return (
     <Router basename={basename}>
+      <ScrollToTop />
       <div className="fade-in"> 
         <Navbar/>
         
@@ -36,6 +41,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/ristorantePage" element={<RistorantePage />} />
             <Route path="/PartyPage" element={<PartyPage />} />
+            <Route path="/WeddingPage" element={<WeddingPage />} />
 
             <Route path="/galleryPage" element={<GalleryPage />} />
             <Route path="/chisiamoPage" element={<ChisiamoPage />} />
