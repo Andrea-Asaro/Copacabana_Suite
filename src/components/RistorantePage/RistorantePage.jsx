@@ -1,7 +1,7 @@
 
 
 import HeroR from "./HeroRistorante";
-import CaroselloR from "./CaroselloRistorante";
+import CaroselloRistorante from "./CaroselloRistorante";
 
 export default function RistorantePage(){
     return(
@@ -18,7 +18,7 @@ export default function RistorantePage(){
             </div>
         </div>
 
-        <CaroselloR/>
+        <CaroselloRistorante/>
 
 
 
