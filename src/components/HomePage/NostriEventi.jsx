@@ -49,12 +49,6 @@ export default function NostriEventi(){
                 </div>
             </div>
         </div>
-
-        
-
-
-        
-        
     </>
     )
 }
