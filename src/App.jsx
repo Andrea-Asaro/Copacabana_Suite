@@ -9,12 +9,11 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css'
 
 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // componenti
 import ScrollToTop from "./components/ScrollToTop";
-
 
 import Navbar from "./components/Navbar";
 import Whatsapp from './components/Whatsapp';

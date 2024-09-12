@@ -6,7 +6,7 @@ export default function ChiSiamo() {
     // Utilizza il hook useInView per rilevare quando l'elemento entra nel viewport
     const { ref, inView } = useInView({
         triggerOnce: true, // L'animazione si attiva solo una volta
-        threshold: 0.2, // Scatta quando il 20% dell'elemento è visibile
+        threshold: 0.9, // Scatta quando il 20% dell'elemento è visibile
     });
 
     // Crea l'animazione con useSpring
