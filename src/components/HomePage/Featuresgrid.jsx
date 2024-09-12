@@ -13,6 +13,8 @@ export default function Featuresgrid(){
                             <p className='font2 fs-5'>Il Copacabana Suite rappresenta la fusione di sfere sensoriali che guidano gli sposi in un suggestivo gioco di emozioni che si snodano tra le stelle e il mare.</p>
                         </div>
                     </div>
+                </div>
+                <div className="col-12">
                     <div className="row bg2">
                         <div className="col-12 col-lg-6 p-0 text-center">
                             <img src="https://picsum.photos/700/300" className='gridImg' alt="" />
