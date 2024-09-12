@@ -66,15 +66,12 @@ export default function HeroContatti(){
                 <div className="hero-content">
                     <h1 className="hero-title font1 fw-bold">Contatti</h1>
                     <button className='btn btn-lg herobtn text0 mt-2 font2'>
-                        Whatsapp
+                        <a href="https://wa.me/3357728611" target="_blank" rel="noopener noreferrer">Whatsapp</a>
                     </button>
                 </div>
             </div>
 
         </div> 
-
-
-
 
         
       </>

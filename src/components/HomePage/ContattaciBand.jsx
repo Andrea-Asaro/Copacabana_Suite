@@ -6,6 +6,7 @@ import { useInView } from 'react-intersection-observer';
 
 export default function ContattaciBand(){
 
+// animazione 
 const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.6,
@@ -16,6 +17,8 @@ const zoomIn = useSpring({
     transform: inView ? "scale(1)" : "scale(0.8)",
     config:{ tension: 120, friction: 13, duration: 600 }
 });
+// animazione 
+
 
 return(
     <>

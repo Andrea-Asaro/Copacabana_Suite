@@ -66,7 +66,7 @@ export default function HeroChiSiamo(){
                 <div className="hero-content">
                     <h1 className="hero-title font1 fw-bold">Copacabana Suite</h1>
                     <button className='btn btn-lg herobtn text0 mt-2 font2'>
-                        Gallery
+                        <NavLink to="/GalleryPage">Gallery</NavLink>
                     </button>
                 </div>
             </div>

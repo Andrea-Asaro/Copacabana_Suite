@@ -4,14 +4,66 @@ import beach1 from "../../media/beachImg1.jpg"
 import beach2 from "../../media/beachImg2.jpg"
 import beach3 from "../../media/beachImg3.jpeg"
 
+import { useSpring, animated } from '@react-spring/web';
+import { useInView } from 'react-intersection-observer';
+import { useState, useEffect } from 'react';
+
 export default function PartyCards(){
+
+    const [threshold, setThreshold] = useState(0.4);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setThreshold(window.innerWidth > 1080 ? 0.7 : 0.4);
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold,
+    });
+
+    const { ref: ref1, inView: inView1 } = useInView({
+        triggerOnce: true,
+        threshold,
+    });
+
+    const { ref: ref2, inView: inView2 } = useInView({
+        triggerOnce: true,
+        threshold,
+    });
+
+    const slideInLeft = useSpring({
+        opacity: inView ? 1 : 0,
+        transform: inView ? "translateX(0px)" : "translateX(-100px)",
+        config: { tension: 210, friction: 16, duration: 500}
+    });
+
+   const slideInUp = useSpring({
+        opacity: inView1 ? 1 : 0,
+        transform: inView1 ? "translateY(0px)" : "translateY(130px)",
+        config: { tension: 210, friction: 16, duration: 500}
+    });
+
+    const slideInRight = useSpring({
+        opacity: inView2 ? 1 : 0,
+        transform: inView2 ? "translateX(0px)" : "translateX(100px)",
+        config: { tension: 210, friction: 16, duration: 500}
+    });
+
+
     return(
         <>
         
 
         <div className="container-fluid p-lg-5 py-5 mt-5 bg0">
-            <div className="row px-5">
-                <div className="col-12 col-lg-4 my-4 d-flex justify-content-center">
+            <div className="row px-5 overflow-hidden">
+                <animated.div ref={ref} style={slideInLeft} className="col-12 col-lg-4 my-4 d-flex justify-content-center">
 
                     <div className="card rounded-0 bg0 h-100" style={{ maxWidth:"500px" }} >
                         <img src={beach1} className="card-img-top h-50 rounded-0" alt="18esimo compleanno sulla spiaggia"/>
@@ -21,8 +73,8 @@ export default function PartyCards(){
                         </div>
                     </div>
 
-                </div>
-                <div className="col-12 col-lg-4 my-4 d-flex justify-content-center">
+                </animated.div>
+                <animated.div ref={ref1} style={slideInUp} className="col-12 col-lg-4 my-4 d-flex justify-content-center">
 
                     <div className="card rounded-0 bg0 h-100" style={{ maxWidth:"500px" }}>
                         <img src={beach2} className="card-img-top h-50 rounded-0" alt="Ricevimento elegante al tramonto"/>
@@ -32,8 +84,8 @@ export default function PartyCards(){
                         </div>
                     </div>
 
-                </div>
-                <div className="col-12 col-lg-4 my-4 d-flex justify-content-center">
+                </animated.div>
+                <animated.div ref={ref2} style={slideInRight} className="col-12 col-lg-4 my-4 d-flex justify-content-center">
 
                     <div className="card rounded-0 bg0 h-100" style={{ maxWidth:"500px" }}>
                         <img src={beach3} className="card-img-top h-50 rounded-0" alt="Anniversario di matrimonio in riva al mare"/>
@@ -43,14 +95,11 @@ export default function PartyCards(){
                         </div>
                     </div>
 
-                </div>
+                </animated.div>
             </div>
         </div>
            
-        
-        
-        
-        
+          
         </>
     )
 }
