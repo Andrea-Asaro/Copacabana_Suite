@@ -104,10 +104,6 @@ body {
 
 }
 
-#HeroContatti .heroContent .herobtn:hover a{
-  color: var(--color-3);
-}
-
 
 #HeroContatti .swiper-slide .slideTitle {
   position: absolute;

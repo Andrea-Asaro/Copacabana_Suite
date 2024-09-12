@@ -64,7 +64,7 @@ export default function HeroChiSiamo(){
 
             <div className="parallax-bg">
                 <div className="hero-content">
-                    <h1 className="hero-title font1 fw-bold">Copacabana Suite</h1>
+                    <h1 className="hero-title font1 fw-bold">Chi siamo</h1>
                     <button className='btn btn-lg herobtn text0 mt-2 font2'>
                         <NavLink to="/GalleryPage">Gallery</NavLink>
                     </button>

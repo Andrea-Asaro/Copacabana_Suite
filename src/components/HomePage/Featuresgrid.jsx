@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import './Featuresgrid.css';
 
 import { useSpring, animated } from '@react-spring/web';
@@ -77,9 +79,9 @@ export default function Featuresgrid(){
                         <div className="col-12 col-lg-6 p-5 order-1">
                             <h3 className='font1 text1'>Ristorante</h3>
                             <p className='font2 fs-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae accusamus rerum saepe sit magnam quo eveniet quibusdam, repudiandae et, autem commodi, porro vel ad tempora explicabo nihil quos rem! Adipisci!</p>
-                            <button className='btn gridbtn'>
+                            <NavLink to="/ristorantePage" className='btn gridbtn'>
                                 Scopri di più
-                            </button>
+                            </NavLink>
                         </div>
                     </animated.div>
                 </div>
@@ -91,9 +93,9 @@ export default function Featuresgrid(){
                         <div className="col-12 col-lg-6 p-5 order-lg-2 text-end">
                             <h3 className='font1 text1'>Party</h3>
                             <p className='font2 fs-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perspiciatis dolore inventore molestiae voluptatem libero recusandae quasi iure esse rerum cumque ducimus dolorem, laborum atque quam amet officiis. Fugiat, voluptatum!</p>
-                            <button className='btn gridbtn'>
+                            <NavLink to="/partyPage" className='btn gridbtn'>
                                 Scopri di più
-                            </button>
+                            </NavLink>
                         </div>
                     </animated.div>
                 </div>
@@ -105,9 +107,9 @@ export default function Featuresgrid(){
                         <div className="col-12 col-lg-6 p-5">
                             <h3 className='font1 text1'>Wedding</h3>
                             <p className='font2 fs-5'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi repudiandae esse nobis doloremque, totam nihil ut deserunt rerum repellendus, voluptas cupiditate assumenda ipsa optio nulla voluptatibus iusto nam obcaecati tempore.</p>
-                            <button className='btn gridbtn'>
+                            <NavLink to="/weddingPage" className='btn gridbtn'>
                                 Scopri di più
-                            </button>
+                            </NavLink>
                         </div>
                     </animated.div>
                 </div>

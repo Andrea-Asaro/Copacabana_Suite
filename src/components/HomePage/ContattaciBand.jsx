@@ -26,11 +26,12 @@ return(
         <div className="row contattaciImage">
             <div className="col-12 contattaciShade text-center">
                 <animated.h2 ref={ref} style={zoomIn} className="text0 font1 fw-bold">Entra nel mondo Copacabana!</animated.h2>
-                <animated.button ref={ref} style={zoomIn} className="btn btn-lg btnContattaci mt-4">Contattaci</animated.button>
+                <animated.button ref={ref} style={zoomIn} className="btn btn-lg btnContattaci mt-4">
+                    <a href="https://wa.me/3357728611" target="_blank" rel="noopener noreferrer">Contattaci</a>
+                </animated.button>
             </div>
         </div>
     </div>
-
 
 
     </>
